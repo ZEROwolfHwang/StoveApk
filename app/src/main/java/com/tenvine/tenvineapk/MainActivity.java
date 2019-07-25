@@ -1,4 +1,4 @@
-package com.tenvine.stoveapk;
+package com.tenvine.tenvineapk;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
