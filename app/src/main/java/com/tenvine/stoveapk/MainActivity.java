@@ -6,9 +6,6 @@ import android.widget.TextView;
 
 import com.tenvine.channel.helper.ChannelReaderUtil;
 
-import java.nio.ByteBuffer;
-import java.util.Map;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,15 +19,5 @@ public class MainActivity extends AppCompatActivity {
         TextView mTextView = findViewById(R.id.channel);
         String channel = ChannelReaderUtil.getChannel(getApplicationContext());
         mTextView.setText(channel);
-
-        TextView getAllIdValueMap = findViewById(R.id.getAllIdValueMap);
-        Map<Integer, ByteBuffer> allIdValueMap = ChannelReaderUtil.getAllIdValueMap(getApplicationContext());
-        getAllIdValueMap.setText(allIdValueMap.toString());
-
-//        TextView getApkPath = findViewById(R.id.getApkPath);
-//        String apkPath = ChannelReaderUtil.getApkPath(getApplicationContext());
-//        getApkPath.setText(apkPath);
-
-
     }
 }
