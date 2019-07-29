@@ -9,15 +9,15 @@ import com.tenvine.channel.helper.ChannelReaderUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-//    TextView mTextView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // default channel :  10#星空屋
         TextView mTextView = findViewById(R.id.channel);
         String channel = ChannelReaderUtil.getChannel(getApplicationContext());
-        mTextView.setText(channel);
+
+        mTextView.setText("channel代号: "+channel);
     }
 }

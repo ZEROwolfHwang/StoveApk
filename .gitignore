@@ -13,4 +13,6 @@
 .externalNativeBuild
 *.apk
 
+/.idea
 # /tenvine
+/release

@@ -26,7 +26,6 @@ public class ChannelReaderUtil {
             }
             mChannelCache = channel;
         }
-
         return mChannelCache;
     }
 
@@ -40,7 +39,10 @@ public class ChannelReaderUtil {
         String apkPath = getApkPath(context);
         String channel = ChannelReader.getChannelByV2(new File(apkPath));
         Log.i(TAG, "getChannelByV2 , channel = " + channel);
-        return channel;
+        if (channel != null) {
+            return channel;
+        }
+        return "10";
     }
 
     /**
@@ -53,7 +55,10 @@ public class ChannelReaderUtil {
         String apkPath = getApkPath(context);
         String channel = ChannelReader.getChannelByV1(new File(apkPath));
         Log.i(TAG, "getChannelByV1 , channel = " + channel);
-        return channel;
+        if (channel != null) {
+            return channel;
+        }
+        return "10";
     }
 
 
