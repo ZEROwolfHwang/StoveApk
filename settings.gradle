@@ -1,1 +1,1 @@
-include ':app', ':tenvine2', ':tenvine'
+include ':app', ':tenvine'
