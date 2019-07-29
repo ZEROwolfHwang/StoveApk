@@ -19,7 +19,7 @@ android {
     }
     android.libraryVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "tenvine-channel" + "-${defaultConfig.versionName}"+'.aar'
+            outputFileName = "tenvine-channel" + "-v${defaultConfig.versionName}"+'.aar'
         }
     }
 }
