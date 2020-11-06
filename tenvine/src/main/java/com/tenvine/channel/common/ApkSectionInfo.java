@@ -21,6 +21,11 @@ import com.tenvine.channel.common.verify.ApkSignatureSchemeV2Verifier;
 
 import java.nio.ByteBuffer;
 
+/**
+ * Created by leontli on 17/1/18.
+ * APK info
+ */
+
 public class ApkSectionInfo {
     public boolean lowMemory = false;
     public long apkSize;

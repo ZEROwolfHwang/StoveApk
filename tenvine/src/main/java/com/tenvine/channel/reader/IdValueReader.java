@@ -27,6 +27,11 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Map;
 
+/**
+ * Created by leontli on 17/1/19.
+ * <p>
+ * 针对V2签名块的Id-Value序列进行读取操作
+ */
 
 public class IdValueReader {
 

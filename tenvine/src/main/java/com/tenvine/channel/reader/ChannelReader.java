@@ -16,13 +16,15 @@
 
 package com.tenvine.channel.reader;
 
-
 import com.tenvine.channel.common.ChannelConstants;
 import com.tenvine.channel.common.V1SchemeUtil;
 import com.tenvine.channel.common.V2SchemeUtil;
 
 import java.io.File;
 
+/**
+ * Created by leontli on 17/1/19.
+ */
 
 public class ChannelReader {
 

@@ -18,9 +18,9 @@ git clone https://github.com/ZEROwolfHwang/TenvineApk.git
                 dirs 'libs'
             }
         }
-        
+
     2. 然后在dependencies{}节点中添加:
-        
+
         implementation (name: 'tenvine-channel-v1.1', ext: 'aar')
 ```
 
@@ -33,4 +33,7 @@ TextView mTextView = findViewById(R.id.channel);
 String channel = ChannelReaderUtil.getChannel(getApplicationContext());
 mTextView.setText("channelCode: "+channel);
 ```
+
+
+参考链接 https://github.com/Tencent/VasDolly
 
